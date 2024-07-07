@@ -31,7 +31,7 @@ public class CardServiceImp implements CardService {
     public void getCardInfo(String CardNumber) {
         for(Card el : Menu.bank.getRegisteredCard()){
             if (el.getCardNumber().equals(CardNumber)) {
-                System.out.println(el.getAmount());
+                System.out.println("Баланс карты: " + el.getAmount());
             }
         }
     }
